@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Könnun</title>
+    <link rel="stylesheet" href="styles.css" >
+  </head>
+  <body>
+    <div class="content">
+    <header>Könnun um forritun</header>
+    <fieldset>
+        <legend><strong>Reynsla af forritun</strong></legend>
+        <div>
+            <label for="forritunarmál">Forritunarmál sem ég kann best</label>
+            <select id="forritunarmál" name="forritunarmál" required>
+                <option value="">Velja</option>
+                <option value="Python">Python</option>
+                <option value="C++">C++</option>
+                <option value="Java>">Java</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="PHP">PHP</option>
+                <option value="R">R</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Go">Go</option>
+                <option value="Assembly">Assembly</option>
+            </select>
+        </div>
+      <label>Hvað finnst þér best við forritunarmálið?</label> 
+        <input type="text" name="q" required>
+        <label>Hvað finnst þér verst við forritunarmálið?</label>
+        <input type="text" name="q" required>
+    <label>Dæmi um forrit</label>
+        <input type="file" name="dæmi um forrit">
+</fieldset>
+<fieldset>
+    <legend>Forritunarmál sem mig langar að læra</legend>
+    <div>
+        <label for="forritunarmál">Forritunarmál sem mig langar að læra</label>
+        <select class="forritunarmál" name="forritunarmál">
+            <option value="-Veldu úr listanum-">-Veldu úr listanum-</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="Java>">Java</option>
+            <option value="C">C</option>
+            <option value="C#">C#</option>
+            <option value="PHP">PHP</option>
+            <option value="R">R</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Go">Go</option>
+            <option value="Assembly">Assembly</option>
+        </select>
+        <label for="a">Hvers vegna langar þig að læra þetta forritunarmál</label>
+        <select id="a" name="a">
+            <option value="-Veldu úr listanum-">-Veldu úr listanum-</option>
+            <option value="Vegna vinnu">Vegna vinnu</option>
+            <option value="Fyrir akademísk störf">Fyrir akademísk störf</option>
+            <option value="Forvitni">Forvitni</option>
+        </select>
+        <label>Annað
+            <textarea name="Annað" id="Annað"></textarea>
+        </label>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Hafa samband</legend>
+    <div>
+        <input type="checkbox" id="v" name="v">
+        <label for="v">Það má hafa samband við mig</label>
+    </div>
+    <div>
+        <input type="email" id="email" placeholder="example@hi.is">
+        <input type="text" id="phone" placeholder="000-0000">
+    </div> 
+</fieldset>
+<button>Svara könnun</button>
+<footer>
+<p> <a href = "index.html" >Aftur á forsíðu</a>
+ <a href = "baekur.html" >Fara á bókasíðu</a>
+ <a href = "um.html" >Lesa um forritun</a></p>
+</footer>
+</div>
+  </body>
+</html>

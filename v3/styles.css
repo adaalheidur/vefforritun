@@ -1,0 +1,182 @@
+/*
+Setjum inn „reset“ sem fjarlægir margin og padding af öllu
+Þessu má ekki breyta
+*/
+* {
+    margin: 0rem;
+    padding: 0rem;
+    
+
+  }
+  
+  /*
+  Reiknum stærð á öllum boxum sem border-box.
+  Þessu má breyta eða fjarlægja.
+  */
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 1rem;
+    font-family: 'Inter', sans-serif;
+    
+    
+  }
+  
+  /* og látum erfast á allt */
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
+  
+  /* Uppsetning á síðu—layout */
+  .content {
+    
+    /* Lætur börn .content raða sér með _flexbox_ */
+    display: flex;
+    /* röðun sé í dálkaröð (niður) */
+    flex-direction: column;
+  }
+  
+  .content > header {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        width: 1200px;
+	    border: 25px #00bfff ;
+	    padding: 0px;
+        background-color: #00bfff;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+  }
+  
+  .content > nav {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+  }
+  
+  .content > main {
+    /* Lætur <main> taka allt auka pláss sem er í boði */
+    flex: 1;
+  }
+  
+  .content > footer {
+    width: 1200px;
+    border: 25px solid #00bfff ;
+    padding: 10px;
+    background-color: #00bfff;
+    font-weight: bold;
+
+  }
+  
+  /* almennar skilgreiningar */
+  
+  h1{
+    text-decoration: underline;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: left;
+      margin-left: 1rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; 
+
+  }
+
+  h2 {
+    
+    margin: 1rem;
+
+
+    /* TODO setja almennar skilgreinar fyrir fyrirsagnir */
+  }
+
+  h3 {
+    margin: 1rem;
+  }
+
+  ol li {
+    margin-left: 2.5rem;
+  }
+
+  
+
+
+  .picLeft {
+    float: left;
+    margin: 1rem;
+
+  }
+  
+  a {
+    color: black;
+  }
+  
+  /* nav — valmynd */
+  
+
+
+  caption {
+    font-size: 2.5rem;
+    width: 1200px;
+	  border: 25px solid #00bfff ;
+	  padding: 10px;
+    background-color: #00bfff;
+    text-align: left;
+    }
+   
+    th, td, table {
+      border-spacing: 1rem;
+    }
+    table{
+      border: 1px solid; 
+    }
+  
+    td {
+      text-align:center;
+    }
+    tr:nth-child(even) {background-color: #afebff;}
+
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #00bfff ;
+        border-radius: 4px;
+    }
+
+    fieldset {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #00bfff ;
+        border-radius: 4px;
+    } 
+    button {
+        color: #00bfff;
+    }
+    p {
+    margin: 1rem;
+    text-align:justify;
+    } 
+  
+  /* TODO */
+  
+  /* form */
+  
+  /* TODO */
