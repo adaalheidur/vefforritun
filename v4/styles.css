@@ -1,0 +1,276 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  html {
+    box-sizing: border-box;
+  
+    
+    scroll-behavior: smooth;
+  }
+  
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+  
+  :root {
+    --spacing: 1rem;
+    --max-width: 1200px;
+  
+    --color-primary: #f0f0f8;
+  
+    --color-header: #fff;
+    --color-text: #000;
+    --color-border: #ccc;
+  
+    --font-base-body-px: 16px;
+    --font-base-size: 1rem;
+    --font-family-base: 'Nunito', Helvetica, Arial, sans-serif;
+    --font-family-heading: 'Domine', Georgia, serif;
+   
+  }
+  
+  
+  body {
+    color: var(--color-text);
+    font-size: var(--font-base-body-px);
+    line-height: 1.5;
+    font-family: var(--font-family-base);
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-family-heading);
+    margin-bottom: 1rem;
+  }
+  
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  
+
+
+  
+  .button {
+    display: inline-block;
+    background-color: var(--color-primary); 
+    border: none;
+    border-radius: 4px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 1rem;
+    font-family: var(--font-family-heading);
+   
+  
+    
+  }
+  
+  .button-button{
+    display: inline-block;
+    background-color: var(--color-primary); 
+    border: none;
+    border-radius: 4px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-family: var(--font-family-heading);
+  }
+
+  .button-secondary {
+    display: inline-block;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 1rem;
+    font-family: var(--font-family-heading);
+  }
+  
+  
+  
+  
+  main {
+    margin: 0 auto;
+    max-width: var(--max-width);
+  }
+  
+  .info-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing) * 4);
+  }
+  
+
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #ffffff;
+    background-color: skyblue;
+    background-position: 50% 50%;
+    background-image: url(myndir/15BD08D1-F094-4EC1-B0E9-80A9DAA84DF9.jpeg);
+    background-attachment: fixed;
+  }
+
+  .wrapper{
+    margin: 0 auto;
+    width: 100%;
+  
+  }
+ 
+  
+
+  .container {
+    position: relative;
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .info {
+    margin: 3rem;
+    display: flex;
+    width: 85%;
+  }
+
+  .infoTwo{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 2.5rem;
+    width: 85%;
+    
+
+  }
+
+  .info img{
+    transform: rotate(3deg);
+    height: 280px;
+    margin-left: 2rem;
+    width: 50%
+    
+  }
+
+  .infoTwo img{
+    transform: rotate(-3deg);
+    height: 280px;
+    margin-right: 2rem;
+    width: 50%
+  }
+  .first{
+    width: 50%;
+    margin: 1rem;
+  }
+
+
+  .kicker{
+   font-family: var(--font-family-base);
+  } 
+ 
+
+  .cards {
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+  
+    
+  }
+
+  .card{
+   
+    width: calc(100% / 2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+   
+    
+  }
+  
+  
+
+  .cards .card img {
+    border-top: 1px solid #ffffff;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    margin-top: 2.5rem;
+    height: 280px;
+    width: 90%;
+    object-fit: cover;
+    order:-1
+    
+    
+    
+
+  }
+
+  
+  .texti{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 220px;
+    border-bottom: 1px solid var(--color-border);
+    border-left: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+    
+    
+  }
+ 
+  footer{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content:normal;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: solid var(--color-primary);
+    border-width: 20px;
+    background-color: var(--color-primary);
+    margin-top: 1rem;
+    font-family: var(--font-family-heading);
+    
+  }
+  
+ 
+
+  
+
+  
+
+  
+
+
+ 
+
+ 
+
+
+  
+  
+
+  
