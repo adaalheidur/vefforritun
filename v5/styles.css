@@ -211,7 +211,7 @@
     .info .content{
       width: 50%;
       max-width: 400px;
-      margin: 1/2rem;
+      margin: 0.5rem;
     }
   }
 
@@ -224,7 +224,7 @@
   }
   
   .info .content p {
-    gap: none;
+    gap: 0;
   }
   @media only screen and (min-width:800px){
     .info .content p{
@@ -266,7 +266,7 @@
   }
   
   .info-right .content {
-    order: none;
+    order: 0;
   }
   @media only screen and (min-width:800px){
     .info-right .content {
