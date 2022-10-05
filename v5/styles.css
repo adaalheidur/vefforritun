@@ -193,7 +193,7 @@
     }
   }
 
-  @media only screen and (min-width:1600px){
+  @media only screen and (min-width:1400px){
     .info{
       display: flex;
       gap: calc(var(--spacing) * 2);
@@ -215,7 +215,7 @@
     }
   }
 
-  @media only screen and (min-width:1600px){
+  @media only screen and (min-width:1400px){
     .info .content{
       width: 50%;
       max-width: 400px;
@@ -251,7 +251,7 @@
     }
   }
 
-  @media only screen and (min-width:1600px){
+  @media only screen and (min-width:1400px){
     .info .image{
       width: 50%;
     }
