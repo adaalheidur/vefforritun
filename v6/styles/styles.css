@@ -1,0 +1,399 @@
+:root {
+  --spacing: 1rem;
+  --max-width: 1400px;
+  --color-primary: $primary;
+  --color-header: $header;
+  --color-text: $text;
+  --color-border: $border;
+  --font-base-body-px: 16px;
+  --font-base-size: 1rem;
+  --font-family-base: "Nunito", helvetica, arial, sans-serif;
+  --font-family-heading: "Domine", georgia, serif;
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+  --vertical-space: calc(var(--gutter));
+}
+
+@media (min-width: 600px) {
+  :root {
+    --vertical-space: calc(var(--gutter) * 2);
+  }
+  @font-face {
+    font-family: "Domine";
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/domine.ttf") format("woff");
+  }
+  @font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/nunito.ttf") format("woff");
+  }
+}
+footer {
+  padding: var(--spacing);
+  color: var(--color-text);
+  background-color: var(--color-primary);
+  text-align: center;
+}
+
+:root {
+  --spacing: 1rem;
+  --max-width: 1400px;
+  --color-primary: $primary;
+  --color-header: $header;
+  --color-text: $text;
+  --color-border: $border;
+  --font-base-body-px: 16px;
+  --font-base-size: 1rem;
+  --font-family-base: "Nunito", helvetica, arial, sans-serif;
+  --font-family-heading: "Domine", georgia, serif;
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+  --vertical-space: calc(var(--gutter));
+}
+
+@media (min-width: 600px) {
+  :root {
+    --vertical-space: calc(var(--gutter) * 2);
+  }
+  @font-face {
+    font-family: "Domine";
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/domine.ttf") format("woff");
+  }
+  @font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/nunito.ttf") format("woff");
+  }
+}
+.cards {
+  display: grid;
+  grid-template-rows: auto;
+  gap: var(--gutter);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+  }
+  .card {
+    grid-column: span 6;
+  }
+}
+.card > .image {
+  order: -1;
+  height: 300px;
+}
+
+.card > .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: 300px;
+}
+
+.card > .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--spacing);
+  padding: 0.5rem;
+  border: 1px solid #999;
+  border-top: 0;
+}
+
+.card > .content > p {
+  flex: 1;
+}
+
+.examples h2 {
+  margin-bottom: var(--spacing);
+}
+
+:root {
+  --spacing: 1rem;
+  --max-width: 1400px;
+  --color-primary: $primary;
+  --color-header: $header;
+  --color-text: $text;
+  --color-border: $border;
+  --font-base-body-px: 16px;
+  --font-base-size: 1rem;
+  --font-family-base: "Nunito", helvetica, arial, sans-serif;
+  --font-family-heading: "Domine", georgia, serif;
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+  --vertical-space: calc(var(--gutter));
+}
+
+@media (min-width: 600px) {
+  :root {
+    --vertical-space: calc(var(--gutter) * 2);
+  }
+  @font-face {
+    font-family: "Domine";
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/domine.ttf") format("woff");
+  }
+  @font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/nunito.ttf") format("woff");
+  }
+}
+.info-boxes {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  gap: var(--vertical-space);
+}
+
+.info .content {
+  margin: auto;
+}
+
+.info .content p {
+  margin-bottom: calc(var(--spacing) * 2);
+}
+
+.info .kicker {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.info .image {
+  display: flex;
+}
+
+.info .image img {
+  margin: auto;
+  transform: rotateZ(2deg);
+}
+
+.info-right .image img {
+  transform: rotateZ(-2deg);
+}
+
+.info-right .content {
+  order: 2;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --vertical-space: calc(var(--gutter) * 2);
+  }
+  .info-boxes {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    gap: var(--gutter);
+  }
+  .info {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: auto;
+    gap: var(--gutter);
+  }
+  .info content {
+    grid-column: 1/span 6;
+  }
+  .info image {
+    grid-column: 7/span 6;
+  }
+  .info .info-right .content {
+    grid-column: 7/span 6;
+  }
+  .info .info-right .image {
+    grid-column: 1/span 6;
+  }
+}
+@media (min-width: 1000px) {
+  .info .content {
+    grid-column: 2/span 4;
+  }
+  .info .image {
+    grid-column: 7/span 6;
+  }
+  .info-right .content {
+    grid-column: 8/span 4;
+  }
+  .info-right .image {
+    grid-column: 1/span 6;
+  }
+}
+:root {
+  --spacing: 1rem;
+  --max-width: 1400px;
+  --color-primary: $primary;
+  --color-header: $header;
+  --color-text: $text;
+  --color-border: $border;
+  --font-base-body-px: 16px;
+  --font-base-size: 1rem;
+  --font-family-base: "Nunito", helvetica, arial, sans-serif;
+  --font-family-heading: "Domine", georgia, serif;
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+  --vertical-space: calc(var(--gutter));
+}
+
+@media (min-width: 600px) {
+  :root {
+    --vertical-space: calc(var(--gutter) * 2);
+  }
+  @font-face {
+    font-family: "Domine";
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/domine.ttf") format("woff");
+  }
+  @font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/nunito.ttf") format("woff");
+  }
+}
+header {
+  poisition: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+  background-color: skyblue;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-image: url("/myndir/15BD08D1-F094-4EC1-B0E9-80A9DAA84DF9.jpeg");
+}
+header .content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 2);
+  margin: auto;
+  width: calc(100% - 2 * var(--offset));
+  font-family: var(--font-family-heading);
+  font-size: calc(var(--font-base-size) * 1.5);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+header span {
+  font-size: 2rem;
+}
+
+header .protection {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+:root {
+  --spacing: 1rem;
+  --max-width: 1400px;
+  --color-primary: $primary;
+  --color-header: $header;
+  --color-text: $text;
+  --color-border: $border;
+  --font-base-body-px: 16px;
+  --font-base-size: 1rem;
+  --font-family-base: "Nunito", helvetica, arial, sans-serif;
+  --font-family-heading: "Domine", georgia, serif;
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+  --vertical-space: calc(var(--gutter));
+}
+
+@media (min-width: 600px) {
+  :root {
+    --vertical-space: calc(var(--gutter) * 2);
+  }
+  @font-face {
+    font-family: "Domine";
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/domine.ttf") format("woff");
+  }
+  @font-face {
+    font-family: "Nunito";
+    font-style: normal;
+    font-display: swap;
+    src: url("./fonts/nunito.ttf") format("woff");
+  }
+}
+.button {
+  display: inline-block;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  padding: calc(var(--spacing) / 2) calc(var(--spacing));
+  font-family: var(--font-family-base);
+  text-decoration: none;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+}
+
+.button-secondary {
+  border: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+body {
+  color: var(--color-text);
+  font-size: var(--font-base-body-px);
+  line-height: 1.5;
+  font-family: var(--font-family-base);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-heading);
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 100%;
+  gap: var(--vertical-space);
+  margin: var(--vertical-space) auto;
+  width: calc(100% - 2 * var(--offset));
+  max-width: var(--max-width);
+}/*# sourceMappingURL=styles.css.map */
